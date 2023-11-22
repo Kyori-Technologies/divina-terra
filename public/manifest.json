@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "divina-terra-atibaia",
+  "short_name": "Divina Terra Atibaia",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A Divina Terra é referência em alimentação saudável. Em nossa loja você encontra uma ampla linha de produtos naturais e suplementos, além de novidades cuidadosamente selecionadas."
+}

@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": ["@fellipeutaka/eslint-config/react", "plugin:qwik/recommended"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
