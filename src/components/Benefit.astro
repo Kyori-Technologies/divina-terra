@@ -1,0 +1,25 @@
+---
+import clsx from "clsx";
+const { title, content, horizontalInvertion } = Astro.props as {
+  title: string;
+  content: string;
+  horizontalInvertion: boolean;
+};
+---
+
+<div
+  class={clsx(
+    "flex items-center gap-8",
+    horizontalInvertion ? "flex-row-reverse text-right" : "flex-row text-left",
+  )}
+>
+  <div
+    class="bg-gray-100 h-16 w-16 xl:h-32 xl:w-32 rounded-full border-primary border flex items-center justify-center flex-row-reverse"
+  >
+    <slot name="icon" />
+  </div>
+  <div>
+    <p class="uppercase font-bold">{title}</p>
+    <p class="text-zinc-600 w-[38ch] xl:text-base text-xs">{content}</p>
+  </div>
+</div>
