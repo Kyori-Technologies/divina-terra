@@ -1,0 +1,35 @@
+---
+import { Picture } from "astro:assets";
+import imageShop from "../../public/loja.jpeg";
+---
+
+<div class="flex lg:flex-row flex-col items-center justify-center gap-10 px-4">
+  <Picture
+    class="w-[350px] md:w-[520px] rounded-lg object-cover"
+    src={imageShop}
+    alt="A description of my image."
+  />
+  <div class="flex flex-col gap-4 md:gap-0">
+    <h1 class="text-3xl font-bold text-center lg:text-left">
+      <span class="text-primary">CONHEÇA A</span>
+      <span class="block md:inline text-secondary">DIVINA TERRA</span>
+    </h1>
+    <p
+      class="md:whitespace-pre-line text-justify md:text-left w-[350px] md:w-full"
+    >
+      A Divina Terra é referência em alimentação saudável, sendo uma franquia
+      com mais de 80 lojas no Brasil. Oferecemos uma ampla linha de produtos
+      naturais e suplementos cuidadosamente selecionados. Com foco na qualidade
+      impecável, nossa linha de produtos naturais a granel é a mais completa do
+      mercado.
+      <!--  -->
+       Trabalhamos somente com as melhores marcas, como: Essential, Vitafor,
+      Pura Vida, Nutrify, True Source, Ocean Drop, Moderação, Caffeine Army,
+      Dux, entre outros. Todos os fornecedores são cuidadosamente selecionados
+      por nosso time de nutricionistas.
+      <!--  -->
+       A Divina Terra acredita que a chave para o equilíbrio entre corpo, mente
+      e espírito está na alimentação.
+    </p>
+  </div>
+</div>
