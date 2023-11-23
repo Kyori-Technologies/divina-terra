@@ -21,7 +21,11 @@
     "@builder.io/qwik": "^1.2.19",
     "@qwikdev/astro": "^0.2.2",
     "astro": "^3.6.0",
-    "astro-seo": "^0.8.0"
+    "astro-seo": "^0.8.0",
+    "clsx": "^2.0.0",
+    "lucide-qwik": "^1.0.0",
+    "lucide-react": "^0.292.0",
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
