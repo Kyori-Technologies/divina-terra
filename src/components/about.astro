@@ -1,21 +1,22 @@
 ---
 import { Picture } from "astro:assets";
-import imageShop from "../../public/loja.jpeg";
+
+import imageShop from "~/assets/images/loja.jpeg";
 ---
 
-<div class="flex lg:flex-row flex-col items-center justify-center gap-10 px-4">
+<div class="flex flex-col items-center justify-center gap-10 px-4 lg:flex-row">
   <Picture
-    class="w-[350px] md:w-[520px] rounded-lg object-cover"
+    class="w-[350px] rounded-lg object-cover md:w-[520px]"
     src={imageShop}
     alt="A description of my image."
   />
   <div class="flex flex-col gap-4 md:gap-0">
-    <h1 class="text-3xl font-bold text-center lg:text-left">
+    <h1 class="text-center text-3xl font-bold lg:text-left">
       <span class="text-primary">CONHEÇA A</span>
-      <span class="block md:inline text-secondary">DIVINA TERRA</span>
+      <span class="block text-secondary md:inline">DIVINA TERRA</span>
     </h1>
     <p
-      class="md:whitespace-pre-line text-justify md:text-left w-[350px] md:w-full"
+      class="w-[350px] text-justify md:w-full md:whitespace-pre-line md:text-left"
     >
       A Divina Terra é referência em alimentação saudável, sendo uma franquia
       com mais de 80 lojas no Brasil. Oferecemos uma ampla linha de produtos

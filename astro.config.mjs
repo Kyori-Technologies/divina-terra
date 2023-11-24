@@ -1,9 +1,12 @@
-import { defineConfig } from "astro/config";
-import qwikdev from "@qwikdev/astro";
-
+import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
+import million from "million/compiler";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [qwikdev(), tailwind()]
+  integrations: [tailwind(), react()],
+  vite: {
+    plugins: [million.vite({ mode: "react", server: true, auto: true })],
+  },
 });

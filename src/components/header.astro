@@ -1,0 +1,52 @@
+---
+import { MenuIcon } from "lucide-react";
+
+import { Logo } from "./logo";
+
+const navLinks = [
+  {
+    label: "Catálogo",
+    url: "#",
+  },
+  {
+    label: "Avaliações",
+    url: "#",
+  },
+  {
+    label: "Sobre nós",
+    url: "#",
+  },
+  {
+    label: "FAQ",
+    url: "#",
+  },
+  {
+    label: "Contato",
+    url: "#",
+  },
+];
+---
+
+<header
+  class="flex items-center gap-8 bg-secondary px-6 py-10 text-white sm:gap-14 sm:px-8 sm:py-12 md:py-16"
+>
+  <a href="/">
+    <Logo className="h-8 w-auto md:h-10" />
+  </a>
+
+  <nav class="hidden md:block">
+    <ul class="flex items-center gap-8">
+      {
+        navLinks.map((link) => (
+          <li>
+            <a href={link.url}>{link.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <button class="ml-auto md:hidden" aria-label="Toggle Menu">
+    <MenuIcon />
+  </button>
+</header>
