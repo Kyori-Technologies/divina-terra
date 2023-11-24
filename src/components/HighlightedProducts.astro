@@ -1,7 +1,15 @@
 ---
 import Benefit from "./Benefit.astro";
 import { Picture } from "astro:assets";
-import { DnaIcon, FlaskConicalOffIcon, MilkIcon, WheatIcon } from "lucide-qwik";
+import {
+  LuDna,
+  LuFlaskConicalOff,
+  LuMilk,
+  LuWheat,
+  LuRecycle,
+  LuVegan,
+  LuBrain,
+} from "@qwikest/icons/lucide";
 
 import whey from "../../public/whey.png";
 import omega3 from "../../public/omega.png";
@@ -12,7 +20,9 @@ import omega3 from "../../public/omega.png";
     <h1 class="text-center text-xl lg:text-3xl">
       Sobre o <span class="text-primary font-bold">Whey Protein</span>
     </h1>
-    <div class="w-full justify-center items-center flex">
+    <div
+      class="w-full justify-center items-center flex 2xl:flex-row flex-col gap-6"
+    >
       <Picture
         src={whey}
         alt="whey"
@@ -25,15 +35,15 @@ import omega3 from "../../public/omega.png";
             title="Aminoácidos imbatíveis"
             content="5,0g de BCAAs; 2,5g de glutamina, 2,5g de leucina, por dose."
           >
-            <DnaIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuDna slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
           <Benefit
             title="Sem aditivos"
             content="Não contém goma xantana, complexos vitamínicos à base de maltodextrina, espessantes, estabilizantes, conservantes ou qualquer outro ingrediente inferior."
           >
-            <FlaskConicalOffIcon
+            <LuFlaskConicalOff
               slot="icon"
-              class="h-6 lg:h-14 w-full text-primary"
+              class="h-8 2xl:h-14 w-full text-primary"
             />
           </Benefit>
         </div>
@@ -43,14 +53,14 @@ import omega3 from "../../public/omega.png";
             content="Possui um perfil nutricional completo e um sabor real."
             title="Proteína concentrada"
           >
-            <MilkIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuMilk slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
 
           <Benefit
             content="Valores nutricionais robustos, sem excessos, com quantidades ideais de carboidratos e gorduras do leite."
             title="Produzida sob-medida"
           >
-            <WheatIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuWheat slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
         </div>
       </div>
@@ -61,26 +71,28 @@ import omega3 from "../../public/omega.png";
 
   <div class="h-screen flex flex-col items-center justify-center gap-8">
     <h1 class="text-center text-xl lg:text-3xl">
-      Sobre o <span class="text-primary font-bold">Omega 3 da toptherm</span>
+      Sobre o <span class="text-primary font-bold">Omega 3</span>
     </h1>
-    <div class="w-full justify-center items-center flex">
+    <div
+      class="w-full justify-center items-center flex 2xl:flex-row flex-col flex-col-reverse gap-6"
+    >
       <div class="flex lg:flex-row flex-col gap-12">
         <div class="flex flex-col gap-12">
           <Benefit
             horizontalInvertion
-            title="Aminoácidos imbatíveis"
-            content="5,0g de BCAAs; 2,5g de glutamina, 2,5g de leucina, por dose."
+            title="Sustentável"
+            content="O ômega 3 vegano da alga Schizochytrium tem a mesma molécula encontrada em outras fontes de ômega 3, como o óleo de peixes, moluscos e crustáceos."
           >
-            <DnaIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuRecycle slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
           <Benefit
             horizontalInvertion
-            title="Sem aditivos"
-            content="Não contém goma xantana, complexos vitamínicos à base de maltodextrina, espessantes, estabilizantes, conservantes ou qualquer outro ingrediente inferior."
+            title="Livre de contaminantes"
+            content="Feito por meio de um processo biotecnológico avançado em ambiente controlado."
           >
-            <FlaskConicalOffIcon
+            <LuFlaskConicalOff
               slot="icon"
-              class="h-6 lg:h-14 w-full text-primary"
+              class="h-8 2xl:h-14 w-full text-primary"
             />
           </Benefit>
         </div>
@@ -88,18 +100,18 @@ import omega3 from "../../public/omega.png";
         <div class="flex flex-col gap-12">
           <Benefit
             horizontalInvertion
-            content="Possui um perfil nutricional completo e um sabor real."
-            title="Proteína concentrada"
+            content="Composto apenas por algas e envasado em cápsulas veganas."
+            title="100% vegetal"
           >
-            <MilkIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuVegan slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
 
           <Benefit
             horizontalInvertion
-            content="Valores nutricionais robustos, sem excessos, com quantidades ideais de carboidratos e gorduras do leite."
-            title="Produzida sob-medida"
+            content="O DHA vegano é um ácido graxo de cadeia longa, que é diferente do ALA presente na linhaça e na chia."
+            title="Alta concentração de dha"
           >
-            <WheatIcon slot="icon" class="h-6 lg:h-14 w-full text-primary" />
+            <LuBrain slot="icon" class="h-8 2xl:h-14 w-full text-primary" />
           </Benefit>
         </div>
       </div>

@@ -20,6 +20,7 @@
     "@astrojs/tailwind": "^5.0.2",
     "@builder.io/qwik": "^1.2.19",
     "@qwikdev/astro": "^0.2.2",
+    "@qwikest/icons": "^0.0.13",
     "astro": "^3.6.0",
     "astro-seo": "^0.8.0",
     "clsx": "^2.0.0",

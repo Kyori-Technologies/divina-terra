@@ -1,10 +1,12 @@
 ---
-import clsx from "clsx";
-const { title, content, horizontalInvertion } = Astro.props as {
+type Props = {
   title: string;
   content: string;
-  horizontalInvertion: boolean;
+  horizontalInvertion?: boolean;
 };
+
+import clsx from "clsx";
+const { title, content, horizontalInvertion } = Astro.props;
 ---
 
 <div
