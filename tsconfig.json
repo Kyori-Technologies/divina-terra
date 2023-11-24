@@ -10,11 +10,16 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "allowJs": true,
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true,
+
     "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik"
+    "jsxImportSource": "react",
+
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   }
 }

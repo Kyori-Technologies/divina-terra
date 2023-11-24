@@ -9,7 +9,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:astro/recommended",
-    "plugin:qwik/recommended"
+    "@fellipeutaka/eslint-config/react",
+    "@fellipeutaka/eslint-config/tailwind"
   ],
   "plugins": ["@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
