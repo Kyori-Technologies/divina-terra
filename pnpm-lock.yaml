@@ -17,6 +17,9 @@ dependencies:
   '@qwikdev/astro':
     specifier: ^0.2.2
     version: 0.2.2(@builder.io/qwik@1.2.19)
+  '@qwikest/icons':
+    specifier: ^0.0.13
+    version: 0.0.13(@builder.io/qwik@1.2.19)
   astro:
     specifier: ^3.6.0
     version: 3.6.0(@types/node@18.18.12)(typescript@5.2.2)
@@ -1199,6 +1202,15 @@ packages:
     dependencies:
       '@builder.io/qwik': 1.2.19(@types/node@18.18.12)(undici@5.27.2)
       fs-extra: 11.1.1
+    dev: false
+
+  /@qwikest/icons@0.0.13(@builder.io/qwik@1.2.19):
+    resolution: {integrity: sha512-e0wY8vmx0nDSUiuCATlk+ojTvdBV4txIGHHWjZW5SRkv4XB8H9+3WSDcLPz0ItUdRyzcrohE9k2jtQI/98aRPA==}
+    engines: {node: '>=15.0.0'}
+    peerDependencies:
+      '@builder.io/qwik': '>=1.0.0'
+    dependencies:
+      '@builder.io/qwik': 1.2.19(@types/node@18.18.12)(undici@5.27.2)
     dev: false
 
   /@types/babel__core@7.20.5:
