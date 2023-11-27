@@ -1,6 +1,6 @@
 import { Accordion } from "@fellipeutaka/ui/accordion";
 
-import { faqQuestions } from "./constants/faq";
+import { faqQuestions } from "../constants/faq";
 
 export function Faq() {
   return (
@@ -12,7 +12,7 @@ export function Faq() {
       <div className="min-h-[460px] px-4  md:w-1/2">
         <Accordion type="single">
           {faqQuestions.map((question) => (
-            <Accordion.Item value={question.body}>
+            <Accordion.Item value={question.body} key={question.body}>
               <Accordion.Trigger className="text-left text-base md:text-xl">
                 {question.body}
               </Accordion.Trigger>

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "../styles/swiper-styles.css";
 import omega3 from "~/assets/images/omega.png";
 
 export function Carousel() {
@@ -10,6 +11,7 @@ export function Carousel() {
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
+      className="bg-brand-golden-light"
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -20,7 +22,7 @@ export function Carousel() {
       }}
       modules={[Autoplay, Pagination]}
     >
-      <SwiperSlide className="!flex !h-80 w-96 flex-row items-center justify-around bg-[#FFE2BD] sm:justify-around lg:justify-center lg:gap-96">
+      <SwiperSlide className="!flex !h-80 w-96 flex-row items-center justify-around  sm:justify-around lg:justify-center lg:gap-96">
         <div className="flex flex-col gap-4">
           <h1 className="text-xs font-bold text-primary sm:text-sm md:text-base lg:text-lg xl:text-xl">
             Lorem ipsum dolor sit amet

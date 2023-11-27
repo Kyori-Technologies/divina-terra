@@ -5,9 +5,9 @@ export default defineTailwindConfig({
   theme: {
     extend: {
       colors: {
-        "brand-golden": {
-          DEFAULT: "hsl(var(--brand-golden))",
-          foreground: "hsl(var(--brand-golden-foreground))",
+        "brand-golden-light": {
+          DEFAULT: "hsl(var(--brand-golden-light))",
+          foreground: "hsl(var(--brand-golden-light-foreground))",
         },
       },
     },

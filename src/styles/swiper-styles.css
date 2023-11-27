@@ -1,0 +1,9 @@
+.swiper-pagination-bullet {
+  @apply bg-red-700;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary;
+}
