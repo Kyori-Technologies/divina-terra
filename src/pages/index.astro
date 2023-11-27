@@ -1,4 +1,6 @@
 ---
+import { Faq } from "~/components/Faq";
+
 import About from "../components/about.astro";
 import Header from "../components/header.astro";
 import HighlightedProducts from "../components/highlighted-products.astro";
@@ -9,4 +11,5 @@ import Layout from "../components/layout.astro";
   <Header />
   <HighlightedProducts />
   <About />
+  <Faq client:visible />
 </Layout>
