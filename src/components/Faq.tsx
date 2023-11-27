@@ -8,6 +8,7 @@ export function Faq() {
       <h3 className="self-center text-3xl font-semibold ">
         Perguntas Frequentes
       </h3>
+
       <div className="min-h-[460px] px-4  md:w-1/2">
         <Accordion type="single">
           {faqQuestions.map((question) => (
