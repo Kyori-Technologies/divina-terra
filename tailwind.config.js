@@ -1,12 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import { defineTailwindConfig } from "@fellipeutaka/styles";
+
+export default defineTailwindConfig({
   content: ["./src/{pages,components}/**/*.{astro,tsx}"],
-  theme: {
-    extend: {
-      colors: {
-        primary: "#D49C55",
-        secondary: "#3E392C",
-      },
-    },
-  },
-};
+});
