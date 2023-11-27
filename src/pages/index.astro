@@ -1,5 +1,6 @@
 ---
 import { Carousel } from "~/components/Carousel";
+import { Faq } from "~/components/Faq";
 
 import About from "../components/about.astro";
 import Header from "../components/header.astro";
@@ -9,7 +10,8 @@ import Layout from "../components/layout.astro";
 
 <Layout>
   <Header />
-  <Carousel />
+  <Carousel client:load />
   <HighlightedProducts />
   <About />
+  <Faq client:visible />
 </Layout>

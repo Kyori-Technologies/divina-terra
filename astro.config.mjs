@@ -5,7 +5,7 @@ import million from "million/compiler";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
+  integrations: [tailwind({ applyBaseStyles: false }), react()],
   vite: {
     plugins: [million.vite({ mode: "react", server: true, auto: true })],
   },

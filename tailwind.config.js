@@ -1,13 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import { defineTailwindConfig } from "@fellipeutaka/styles";
+
+export default defineTailwindConfig({
   content: ["./src/{pages,components}/**/*.{astro,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: "#D49C55",
-        secondary: "#3E392C",
-        brand_golden: "#3E392D",
+        "brand-golden": {
+          DEFAULT: "hsl(var(--brand-golden))",
+          foreground: "hsl(var(--brand-golden-foreground))",
+        },
       },
     },
   },
-};
+});
