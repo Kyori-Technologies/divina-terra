@@ -1,6 +1,7 @@
 ---
 import { Carousel } from "~/components/Carousel";
 import { Faq } from "~/components/Faq";
+import { Footer } from "~/components/footer.tsx";
 
 import About from "../components/about.astro";
 import Header from "../components/header.astro";
@@ -14,4 +15,5 @@ import Layout from "../components/layout.astro";
   <HighlightedProducts />
   <About />
   <Faq client:visible />
+  <Footer />
 </Layout>
