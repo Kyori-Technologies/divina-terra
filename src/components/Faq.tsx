@@ -4,7 +4,10 @@ import { faqQuestions } from "../constants/faq";
 
 export function Faq() {
   return (
-    <section className="flex h-screen w-full flex-col items-center justify-center gap-16">
+    <section
+      id="faq"
+      className="flex h-screen w-full flex-col items-center justify-center gap-16"
+    >
       <h3 className="self-center text-3xl font-semibold ">
         Perguntas Frequentes
       </h3>
