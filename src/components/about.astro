@@ -1,15 +1,35 @@
 ---
 import { Picture } from "astro:assets";
 
+import leftImg from "~/assets/images/left-plants.svg";
 import imageShop from "~/assets/images/loja.jpeg";
+import rightImg from "~/assets/images/right-plants.svg";
 ---
 
-<div class="flex flex-col items-center justify-center gap-10 px-4 lg:flex-row">
+<div
+  id="about-us"
+  class="relative flex h-screen flex-col items-center justify-center gap-10 px-4 lg:flex-row"
+>
   <Picture
     class="w-[350px] rounded-lg object-cover md:w-[520px]"
     src={imageShop}
     alt="A description of my image."
   />
+
+  <Picture
+    src={leftImg}
+    height={500}
+    alt="left-plants-image"
+    class="absolute bottom-0 left-0 -z-10 hidden opacity-25 xl:flex"
+  />
+
+  <Picture
+    src={rightImg}
+    height={600}
+    alt="left-plants-image"
+    class="absolute bottom-0 right-0 -z-10 hidden opacity-25 xl:flex"
+  />
+
   <div class="flex flex-col gap-4 md:gap-0">
     <h1 class="text-center text-3xl font-bold lg:text-left">
       <span class="text-primary">CONHEÇA A</span>

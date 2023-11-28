@@ -85,6 +85,10 @@
     @apply h-1.5 w-1.5;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   ::-webkit-scrollbar-thumb {
     @apply bg-foreground/40 rounded-lg transition-colors;
   }
