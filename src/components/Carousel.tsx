@@ -4,16 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/swiper-styles.css";
-import gelli from "~/assets/images/geleia.png";
-import wheyCard from "~/assets/images/whey-card.png";
-import wheyChocolate from "~/assets/images/whey-chocolate.png";
+import gelli from "~/assets/images/carousel/gelli.svg";
+import wheyChocolate from "~/assets/images/carousel/whey-chocolate.svg";
+import whey from "~/assets/images/carousel/whey.svg";
 
 export function Carousel() {
   return (
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
-      className="bg-brand-golden-light"
+      className="h-full w-full"
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -25,7 +25,7 @@ export function Carousel() {
       modules={[Autoplay, Pagination]}
     >
       <SwiperSlide>
-        <img src={wheyCard.src} className="object-cover" alt="Product Omega3" />
+        <img src={whey.src} className="object-cover" alt="Product Omega3" />
       </SwiperSlide>
       <SwiperSlide>
         <img
