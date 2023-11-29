@@ -1,7 +1,7 @@
 .swiper-pagination-bullet {
   @apply bg-red-700;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
 .swiper-pagination-bullet-active {
